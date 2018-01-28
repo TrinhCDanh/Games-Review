@@ -1,0 +1,186 @@
+.gs-details > * {
+  width: 100%;
+}
+.gs-area-no1 {
+  margin-bottom: 5px;
+}
+.gs-area-no1 [class*='col-'] {
+  padding: 0;
+}
+.gs-details {
+  width: 33.3%;
+  background-color: bg-box;
+}
+.gs-details .gs-details-image img {
+  width: 100%;
+}
+.gs-details .gs-details-glance {
+  font-size: 18px;
+  color: #fbfafc;
+  padding: 10px;
+}
+.gs-slider {
+  width: 66.3%;
+}
+.gs-content-game {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.gs-area-no2 {
+  background-color: #2f3e47;
+  padding: 20px;
+}
+.gs-area-no2 p {
+  color: lighttext;
+  font-size: 20px;
+}
+.gs-area-no2 .sidebar-primary {
+  padding: 0;
+}
+.review-game-page {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 300px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.review-game-page::after {
+  content: '';
+  absolute: top left;
+  width: 100%;
+  height: 100%;
+}
+.review-game-page .thumbxxx {
+  max-width: 250px;
+  z-index: 10;
+}
+.review-game-page .page-header {
+  padding: 0 0 0 20px;
+  width: 100%;
+  border-bottom: none;
+  color: lighttext;
+  z-index: 10;
+}
+.review-game-page .page-header > * {
+  width: 100%;
+}
+.review-game-page .page-header .news-share {
+  margin-bottom: 5px;
+}
+.review-game .review-game-wrapper {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.review-game .review-game-wrapper > * {
+  z-index: 10;
+}
+.review-game .review-game-wrapper .rs-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40%;
+}
+.review-game .review-game-wrapper .rs-video {
+  width: 60%;
+}
+.review-game .page-header {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.review-game .page-header * {
+  color: lighttext;
+  margin-bottom: 5px;
+}
+.review-container .gs-details-image {
+  position: relative;
+}
+.review-container .gs-details-image::after {
+  content: '';
+  absolute: left top;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(top, rgba(50,58,69,0.2) 40%, #323a45);
+  background: linear-gradient(to bottom, rgba(50,58,69,0.2) 40%, #323a45);
+}
+.gs-details-other .details-other-icon {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 3px;
+}
+.gs-details-other img {
+  width: 40px;
+}
+.rs-media > * {
+  width: 49.8%;
+}
+.rs-point > * {
+  background-color: bg-box;
+  width: 49.8%;
+}
+.rs-point .point-number {
+  background-color: #323a45;
+  padding: 50px;
+}
+.rs-point .point-number [class*="rating"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Aldrich', cursive;
+}
+.rs-point .point-content {
+  color: lighttext;
+  padding: 20px;
+}
+.point-of-ad .point-number .t::after {
+  background-color: boycoy;
+}
+.point-of-fan .point-number .t::after {
+  background-color: #4b0082;
+}
+@media only screen and (max-width: 991px) {
+  .review-game .review-game-wrapper {
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    padding: 0 15px;
+  }
+  .review-game .review-game-wrapper .rs-info,
+  .review-game .review-game-wrapper .rs-video {
+    width: 100%;
+  }
+  .rs-point > * {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .game-owl-carousel {
+    padding: 0 5px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .rs-media > * {
+    width: 100%;
+  }
+  .rs-media .rs-details {
+    padding-bottom: 5px;
+  }
+}
+.testttt {
+  width: 100%;
+  border: none;
+  height: 190px;
+  overflow: visible;
+}

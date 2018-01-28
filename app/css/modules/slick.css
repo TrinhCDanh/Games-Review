@@ -1,0 +1,147 @@
+.flisk {
+  background-color: #000;
+}
+.tets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+  flex-flow: row;
+}
+.tets .xitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.tets .xlarge {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 67%;
+  flex: 0 0 67%;
+}
+.tets .xlarge img {
+  height: 100%;
+}
+.tets .xsmall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.tets .xitem img {
+  height: 100%;
+}
+.tets .xinner {
+  width: 100%;
+  position: relative;
+}
+.tets .xinner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.tets .xinner:hover .light-text {
+  text-shadow: 1px 0px 20px #fff;
+}
+.xinner-a::after {
+  background: -webkit-linear-gradient(right, rgba(0,0,0,0.2) 70%, #000);
+  background: linear-gradient(to left, rgba(0,0,0,0.2) 70%, #000);
+}
+.xinner-b::after,
+.xinner-c::after {
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.2) 60%, #000);
+  background: linear-gradient(to right, rgba(0,0,0,0.2) 60%, #000);
+}
+img {
+  width: 100%;
+}
+.x-feature-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 40%, #000);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 40%, #000);
+  z-index: 1;
+}
+.x-feature-caption > * {
+  width: 100%;
+  color: #fff;
+}
+.x-feature-caption .x-feature-title {
+  padding: 10px;
+}
+.x-feature-caption .x-feature-title span,
+.x-feature-caption .x-feature-title .fa {
+  margin-right: 10px;
+}
+.x-feature-caption .x-feature-title .light-text {
+  font-weight: bold;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.x-feature-caption .x-feature-title h2 {
+  font-size: 30px;
+}
+.x-feature-caption h3 {
+  font-size: 18px;
+}
+@media only screen and (max-width: 991px) {
+  .tets {
+    min-width: 100%;
+    -ms-flex-flow: wrap row;
+    flex-flow: wrap row;
+  }
+  .tets .xlarge {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .tets .xsmall {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .tets .xinner::after {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.9));
+    background: linear-gradient(rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.9));
+  }
+}
+@media only screen and (max-width: 550px) {
+  .xsmall {
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+  }
+  .xsmall .xitem {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+  }
+  .x-feature-title span {
+    font-size: 12px;
+  }
+  .flisk .xlarge .x-feature-title h2 {
+    font-size: 16px;
+  }
+  .flisk .xsmall .x-feature-title h3 {
+    font-size: 16px;
+  }
+}

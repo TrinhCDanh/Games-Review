@@ -1,0 +1,45 @@
+.x-title-bar
+	color darktext
+	border-bottom 3px solid dteal
+	margin-bottom 10px
+	ul
+		padding 0 9px
+		margin 0
+		list-style-type none
+		li
+			display inline-block
+			position relative
+			padding 10px
+			font-size 20px
+			font-weight bold
+			&::after
+				content ''
+				absolute top left
+				width 100%
+				height 100%
+				//background-color dteal
+				z-index -1
+				transform skew(-20deg)
+				border 1px solid dteal
+		.pa::after
+			background-color dteal
+		.pb
+			transition 0.5s
+			color dteal
+			&::before
+				content ''
+				absolute top left
+				width 0%
+				height 100%
+				//background-color dteal
+				z-index -1
+				transform skew(-20deg)
+				//border 1px solid dteal
+				background-color lighttext
+				transition 0.5s
+			&:hover
+				&::before
+					width 100%
+				color darktext
+				
+		

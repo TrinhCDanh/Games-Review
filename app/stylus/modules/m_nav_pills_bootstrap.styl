@@ -1,0 +1,62 @@
+.tab-content
+	background-color bg-box
+	margin-top 0
+	padding 10px
+	*
+		color lighttext
+
+.nav-pills 
+	width 100% 
+	display flex
+	flex-flow wrap
+	margin-bottom 0	
+	li 
+		width 50%
+	
+
+
+.nav-pills>li+li 
+	margin-left 0 
+	display table-cell// 2px by default
+
+.nav-pills li a
+	height 100%
+	font-weight bold 
+	color #999
+	border none
+	border-radius 0
+	transition 0.25s
+	margin-bottom 0
+
+.nav-pills>li>a:hover
+.nav-pills>li>a:focus 
+	text-decoration none
+	background-color bluegreys
+	color lighttext
+
+.nav-pills>li.active>a
+.nav-pills>li.active>a:hover
+.nav-pills>li.active>a:focus
+	background-color dteal
+	color lighttext
+
+.minimal-requirements    
+	display table
+	width 100%
+	.x-row
+		display table-row
+		line-height 40px
+		> *
+			display table-cell
+.rs-table
+	span
+		width 10%
+@media only screen and (max-width: 768px)
+	.minimal-requirements    
+		display block
+		.x-row
+			display flex
+			flex-flow wrap
+			line-height 25px
+			> *
+				width 100%

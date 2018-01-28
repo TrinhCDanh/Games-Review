@@ -1,0 +1,102 @@
+.flisk
+  background-color black
+.tets
+  display flex
+  flex-flow row
+  .xitem 
+    display flex
+    flex 1
+  .xlarge 
+    flex 0 0 67%
+    img 
+      height 100%
+  .xsmall 
+    display flex
+    flex-direction column
+  .xitem 
+    img 
+      height 100%
+  .xinner 
+    width 100%
+    position relative
+    &::after
+      content ''
+      position absolute
+      top 0
+      left 0 
+      height 100%
+      width 100%
+    &:hover
+      .light-text
+        text-shadow 1px 0px 20px white
+.xinner-a::after
+  background linear-gradient(to left, rgba(0,0,0,0.2) 70%, rgba(0,0,0,1))
+.xinner-b::after
+.xinner-c::after
+  background linear-gradient(to right, rgba(0,0,0,0.2) 60%, rgba(0,0,0,1))
+
+img 
+	width 100%
+      
+.x-feature-caption 
+  position absolute 
+  top 0
+  left 0
+  width 100%
+  height 100%
+  display flex
+  align-items flex-end
+  flex-flow wrap
+  background linear-gradient(to bottom, rgba(0,0,0,0.2) 40%, rgba(0,0,0,1))
+  z-index 1
+  > *
+    width 100%
+    color white
+  .x-feature-title
+    padding 10px
+    span
+    .fa
+      margin-right 10px  
+    .light-text
+      font-weight bold
+      transition 0.25s
+    h2
+      font-size 30px
+		h3
+		  font-size 18px	
+	
+        
+@media only screen and (max-width: 991px) 
+  .tets
+    min-width 100%
+    flex-flow wrap row
+    .xlarge 
+      flex 0 0 100%
+    .xsmall
+      flex-direction row
+    .xinner::after
+      background: linear-gradient(rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.9))
+@media only screen and (max-width: 550px)
+  .xsmall
+    flex-flow wrap
+    .xitem
+      flex 100%
+  .x-feature-title
+    span
+      font-size 12px
+  .flisk
+    .xlarge
+      .x-feature-title
+        h2
+          font-size 16px
+    .xsmall      
+      .x-feature-title
+        h3
+          font-size 16px
+    
+     
+
+  
+            
+
+  

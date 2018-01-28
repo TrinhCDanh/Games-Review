@@ -1,0 +1,107 @@
+.video-single-content * {
+  color: lighttext;
+}
+.video-single-content .x-related-caption {
+  margin-bottom: 20px;
+}
+.video-single-content .x-related-caption h3 {
+  font-weight: bold;
+}
+.flisk-video-single .fv-video {
+  padding: 0 10px 0 0;
+}
+.flisk-video-single .fv-info {
+  padding: 0;
+}
+.flisk-video-single .fv-info .vi-caption {
+  color: lighttext;
+}
+.flisk-video-single .sidebar-primary-content {
+  margin: 0;
+}
+.flisk-video-single .x-related-title {
+  color: lighttext;
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+.vi-widget-primary,
+.vi-widget-primary-lastest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.x-video-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.x-video-item:hover .vi-caption {
+  color: dteal;
+}
+.x-video-item .vi-thumb {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+}
+.x-video-item .vi-caption {
+  padding-left: 10px;
+  font-weight: bold;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.x-video-item .vi-caption p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box /* khoảng cách dòng */;
+  max-height: 59px /* Chiều cao tối đa */;
+  font-size: 14px;
+  line-height: 1.4em;
+  -webkit-line-clamp: 3 /* Số dòng hiển thị */;
+  -webkit-box-orient: vertical;
+}
+.vi-widget-primary-lastest .x-video-item {
+  color: lighttext;
+}
+@media only screen and (max-width: 991px) {
+  .flisk-video-single .fv-video {
+    padding: 0 10px;
+  }
+  .flisk-video-single .fv-info {
+    padding: 30px 10px 0;
+  }
+  .flisk-video-single .fv-info .x-related-title {
+    display: none;
+  }
+  .vi-widget-primary > * {
+    width: 24.5%;
+  }
+  .vi-widget-primary-lastest > * {
+    width: 49.5%;
+  }
+  .x-video-item {
+    display: block;
+  }
+  .x-video-item .vi-caption {
+    padding: 10px 0;
+  }
+  .x-video-item .vi-caption p {
+    overflow: visible;
+    text-overflow: visible;
+    max-height: 200px;
+    display: block;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .vi-widget-primary > * {
+    width: 49.5%;
+  }
+}

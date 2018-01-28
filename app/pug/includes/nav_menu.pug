@@ -1,0 +1,46 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container.o-nav-menu
+    .menu-toggle(data-toggle="collapse" data-target="#myNavbar")
+      a(style='cursor: pointer')
+        span.glyphicon.glyphicon-menu-hamburger.x-glyphicon
+
+    .navbar-brand
+      a(href="http://localhost:3000")
+        text(style="color: #1d272b; background-color: #1abc9c; padding: 5px; border-radius: 0 15px") fed
+        text(style="color: #1abc9c") game
+
+    .collapse.o-collapse.navbar-collapse#myNavbar
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href="http://localhost:3000/review-index.html") PC
+        li
+          a(href="http://localhost:3000/review-index.html") PS4
+        li
+          a(href="http://localhost:3000/review-index.html") XBOX
+        li
+          a(href="http://localhost:3000/news-index.html") INTRO
+        li
+          a(href="http://localhost:3000/video_page.html") VIDEOS
+        //li.dropdown
+          a.dropdown-toggle(data-toggle="dropdown" href="#") GAMES
+            span.glyphicon.glyphicon-menu-down
+          ul.dropdown-menu
+            li
+              a(href="http://localhost:3000/games.html") Action
+            li
+              a(href="#") Adventure
+            li
+              a(href="#") One Person Shooter
+            li
+              a(href="#") Open World
+        //li
+          a(href="http://localhost:3000/faq.html") FAQ
+    .menu-search
+      a#open-search
+        span.glyphicon.glyphicon-search.x-glyphicon
+
+    .searchbar#searchbar
+      form.searchbox(method="get" action="#")
+        input(type="text" name="search" placeholder="Search...")
+      a.close-search#close-search
+        span.glyphicon.glyphicon-remove.x-glyphicon

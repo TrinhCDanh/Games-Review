@@ -1,0 +1,39 @@
+.flisk-news-index
+	margin-bottom 25px
+	.x-small
+		padding-top 5px
+		display flex
+		flex-flow wrap
+		justify-content space-between
+		> *
+			width 49.7%
+	.xinner
+		position relative
+		.x-feature-caption 
+			position absolute 
+		  top 0
+		  left 0
+		  width 100%
+		  height 100%
+		  display flex
+		  align-items flex-end
+		  flex-flow wrap
+		  background linear-gradient(to bottom, rgba(0,0,0,0.2) 40%, rgba(0,0,0,1))
+		  z-index 1
+		&:hover
+			.light-text
+				text-shadow 1px 0px 20px white
+@media only screen and (max-width: 550px)
+	.flisk-news-index
+		.x-small
+			> *
+				width 100%
+			.x-feature-title
+				h3
+					font-size 16px
+		.x-large
+			.xinner
+				.x-feature-caption
+					.x-feature-title	
+						h2
+							font-size 16px

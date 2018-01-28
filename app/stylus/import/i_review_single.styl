@@ -1,0 +1,165 @@
+darktext = #323a45
+.gs-details > *
+	width 100%
+.gs-area-no1
+	margin-bottom 5px
+	[class*='col-']
+		padding 0
+.gs-details
+	width 33.3%
+	background-color bg-box//darktext//bluegrey
+	.gs-details-image
+		img
+			width 100%
+	.gs-details-glance
+		font-size 18px
+		color #FBFAFC
+		padding 10px
+.gs-slider
+	width 66.3%
+.gs-content-game
+	//background-color white
+	padding 10px
+	margin-bottom 5px	
+	
+.gs-area-no2
+	background-color #2f3e47 
+	padding 20px
+	p 
+		color lighttext//#e5fbfb
+		font-size 20px
+	.sidebar-primary
+		padding 0
+		
+
+
+.review-game-page
+	position relative
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	background-attachment fixed
+	overflow hidden
+	padding 300px 10px 0
+	display flex
+	&::after 
+		content ''
+		absolute top left
+		width 100%
+		height 100%
+		//background linear-gradient(to bottom, rgba(bg-body,0.2) 40%, rgba(bg-body,1))	
+		//z-index 0
+	.thumbxxx 
+		max-width 250px
+		z-index 10
+	.page-header
+		padding 0 0 0 20px 
+		width 100%
+		//display flex
+		//flex-flow wrap
+		border-bottom none
+		color lighttext
+		z-index 10
+		> *
+			width 100%
+		.news-share
+			margin-bottom 5px
+//animation bounceIn 0.5s linear		
+				
+.review-game
+	.review-game-wrapper
+		padding 0
+		display flex
+		> *
+			z-index 10
+		.rs-info
+			display flex
+			align-items center
+			width 40%
+		.rs-video
+			width 60%
+	.page-header
+		border-bottom none 
+		margin-bottom 0
+		padding-top 0
+		*
+			color lighttext
+			margin-bottom 5px
+
+.review-container
+	.gs-details-image
+		position relative
+		&::after
+			content ''
+			absolute left top
+			height 100%
+			width 100%
+			background linear-gradient(to bottom, rgba(darktext,0.2) 40%, rgba(darktext,1))		
+
+.gs-details-other
+	.details-other-icon
+		display inline-block
+		//background-color lighttext
+		margin 10px 5px
+		//border-radius 50%
+		padding 3px
+	img
+		width 40px
+		
+.rs-media
+	> *
+		width 49.8%
+.rs-point
+	> *
+		background-color bg-box
+		width 49.8%
+	.point-number
+		background-color darktext
+		padding 50px
+		[class*="rating"]
+			display flex
+			justify-content center
+			font-family 'Aldrich', cursive
+	.point-content
+		color lighttext
+		padding 20px
+		
+.point-of-ad
+	.point-number
+		.t
+			&::after
+				background-color boycoy
+.point-of-fan
+	.point-number
+		.t
+			&::after
+				background-color indigo	
+		
+@media only screen and (max-width: 991px)
+	.review-game
+		.review-game-wrapper
+			flex-flow wrap
+			padding 0 15px
+			.rs-info
+			.rs-video
+				width 100%
+	.rs-point
+		> *
+			width 100%
+			
+@media only screen and (max-width: 768px)
+	.game-owl-carousel
+		padding 0 5px		
+@media only screen and (max-width: 550px)
+	.rs-media
+		> *
+			width 100%
+	.rs-media
+		.rs-details
+			padding-bottom 5px			
+			
+.testttt
+	width 100%
+	border none
+	height 190px
+	overflow visible

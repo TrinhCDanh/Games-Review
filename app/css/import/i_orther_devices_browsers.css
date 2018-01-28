@@ -1,0 +1,35 @@
+@supports (-ms-ime-align: auto) {
+  .x-related-primary .x-related-item {
+    float: left;
+  }
+  .home-slider::after {
+    background-attachment: scroll;
+  }
+  .nav-pills > li {
+    float: left;
+    width: 50%;
+  }
+  .review-game-page {
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-device-width: 732px) {
+  .navbar {
+    padding: 0;
+  }
+  body {
+    border-top: 50px solid #eaedf1;
+  }
+  .navbar-collapse {
+    margin-top: 0px;
+  }
+  .x-related-primary .x-related-item {
+    float: left;
+  }
+  .navbar-brand {
+    font-size: 23px;
+  }
+  input[name="search"] {
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,52 @@
+.flisk-news-index {
+  margin-bottom: 25px;
+}
+.flisk-news-index .x-small {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.flisk-news-index .x-small > * {
+  width: 49.7%;
+}
+.flisk-news-index .xinner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 40%, #000);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 40%, #000);
+  z-index: 1;
+}
+.flisk-news-index .xinner .x-feature-caption {
+  position: absolute;
+}
+.flisk-news-index .xinner:hover .light-text {
+  text-shadow: 1px 0px 20px #fff;
+}
+@media only screen and (max-width: 550px) {
+  .flisk-news-index .x-small > * {
+    width: 100%;
+  }
+  .flisk-news-index .x-small .x-feature-title h3 {
+    font-size: 16px;
+  }
+  .flisk-news-index .x-large .xinner .x-feature-caption .x-feature-title h2 {
+    font-size: 16px;
+  }
+}

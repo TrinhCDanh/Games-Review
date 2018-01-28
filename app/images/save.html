@@ -1,0 +1,37 @@
+ul.portfolio-sorting.list-inline.text-center
+  li
+    a(href="#" data-group="all" class="active") All
+  li 
+    a(href="#" data-group="people") People
+  li 
+    a(href="#" data-group="simpsons") Simpson
+  li 
+    a(href="#" data-group="futurama") Futurama
+
+li.col-xs-6.col-sm-3.col-md-3.col-lg-3(data-groups='["simpsons","people"]')
+                figure.portfolio-item
+                  a(href="#")
+                    .z-thumb
+                      img.img-responsive(src="https://crackwatch.com/wp-content/uploads/2016/12/watch-dogs-2-crack.png" alt="Item 1")
+                      .btn.btn-readmore Read more  
+                    .caption 
+                      p Watch Dogs
+
+
+nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar")
+              span.icon-bar 
+              span.icon-bar 
+              span.icon-bar 
+            a.navbar-brand(href="#") FoxCoy
+          .collapse.navbar-collapse#myNavbar
+            ul.nav.navbar-nav.navbar-right 
+              li
+                a(href="#") News
+              li
+                a(href="#") Games
+              li
+                a(href="#") Faq
+          //i.fa.fa-search#fa-search

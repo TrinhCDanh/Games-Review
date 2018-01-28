@@ -1,0 +1,17 @@
+.minimal-requirements.rs-table
+                .x-row
+                  span 
+                    img(src="../images/box-packet.png" style="width: 27px") 
+                  strong Square Enix
+                .x-row
+                  span 
+                    img(src="../images/server.png" style="width: 27px") 
+                  strong Action, RPG
+                .x-row
+                  span 
+                    img(src="../images/psn-icon-32.png" style="width: 27px") 
+                  strong 7 Mar, 2017
+                .x-row
+                  span
+                    img(src="../images/pc-icon-32.png" style="width: 27px")  
+                  strong 17 Mar, 2017 

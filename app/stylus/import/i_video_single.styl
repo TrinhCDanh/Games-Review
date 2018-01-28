@@ -1,0 +1,80 @@
+.video-single-content
+	*
+		color lighttext
+	.x-related-caption
+		margin-bottom 20px 
+		h3
+			font-weight bold
+			
+.flisk-video-single
+	.fv-video
+		padding 0 10px 0 0 
+	.fv-info
+		padding 0
+		.vi-caption
+			color lighttext
+	.sidebar-primary-content
+		margin 0	
+	.x-related-title
+		color lighttext
+		border-bottom none
+		margin-bottom 15px
+.vi-widget-primary
+.vi-widget-primary-lastest
+	display flex
+	flex-flow wrap
+	justify-content space-between
+
+.x-video-item
+	display flex
+	margin-bottom 10px
+	justify-content space-between
+	&:hover
+		.vi-caption
+			color dteal
+	.vi-thumb
+		flex 0 0 35%
+	.vi-caption
+		padding-left 10px
+		font-weight bold
+		transition 0.25s
+		p
+			overflow hidden
+			text-overflow ellipsis
+			display -webkit-box    /* khoảng cách dòng */
+			max-height 59px      /* Chiều cao tối đa */
+			font-size 14px
+			line-height 1.4em
+			-webkit-line-clamp 3/* Số dòng hiển thị */
+			-webkit-box-orient vertical
+.vi-widget-primary-lastest
+	.x-video-item
+		color lighttext		
+@media only screen and (max-width: 991px)
+	.flisk-video-single
+		.fv-video
+			padding 0 10px
+		.fv-info
+			padding 30px 10px 0
+			.x-related-title
+				display none
+	.vi-widget-primary
+		> *
+			width 24.5%
+	.vi-widget-primary-lastest
+		> *
+			width 49.5%
+	.x-video-item
+		display block
+		.vi-caption
+			padding 10px 0
+			p 
+				overflow visible
+				text-overflow visible
+				max-height 200px
+				display block
+
+ @media only screen and (max-width: 550px)
+	.vi-widget-primary
+		> *
+			width 49.5% 

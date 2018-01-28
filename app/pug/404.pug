@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  
+  include includes/head_tag.pug
+
+  body
+    #wrapper
+      
+      include includes/nav_menu.pug
+      
+      //include modules/m_slick.pug
+      section.main-content
+        header.title-404.text-center
+          p 404
+          p.content-404 PAGE NOT FOUND
+        article.detail-404.text-center
+          p Server cannot find the file you requested. File has either been moved or deleted, or you entered the wrong URL or document name. Look at the URL. If a word looks misspelled, then correct it and try it again. If that doesnt work You can try our search option to find what you are looking for.
+
+      include includes/foot_copy.pug
+
+  script(src="js/custom.js")    

@@ -1,0 +1,159 @@
+doctype html
+html(lang='en')
+  
+  include includes/head_tag.pug
+
+  body
+    #wrapper
+      
+      include includes/nav_menu.pug
+      header.jumbotron.text-center(style="margin:0 0; border-radius: 0")
+        h1 Watch Dogs 2
+        .news-meta
+          span
+            i.fa.fa-user  
+            | Mr.D
+          span
+            i.fa.fa-calendar  
+            | 3/2/2018
+          span
+            i.fa.fa-eye  
+            | 1000
+      .jumbotron.text-center(style="margin: 0 0 40px; background-color: white; border-radius: 0; padding: 5px")
+        .news-share
+          ul.icon-download
+            li.cc(data-toggle="modal" data-target="#GoogleDrive")
+              img(src="../images/Google-Drive-Icon4.png" title="GoogleDrive" data-toggle="tooltip" data-placement="top")
+            li.cc(data-toggle="modal" data-target="#OneDrive")
+              img(src="../images/one-drive-icon.png"  title="OneDrive" data-toggle="tooltip" data-placement="top")
+            li.cc(data-toggle="modal" data-target="#OneCloud")
+              img(src="../images/cloud1.png"  title="OneCloud" data-toggle="tooltip" data-placement="top")
+            li
+              a(href="http://store.steampowered.com/app/447040/Watch_Dogs_2/")
+                img(src="../images/steam-dark.png"  title="Steam" data-toggle="tooltip" data-placement="top")
+      section.games-single-container.container
+        
+        
+        section.gs-area-no1.row-eq-height
+          .gs-details
+            .gs-details-image
+              img(src='http://genknews.genkcdn.vn/2016/photo-0-1479374412821.png')
+            .gs-details-glance
+              b Title: 
+              | Watch_Dogs® 2
+              br
+              b Genre: 
+              | Action, Adventure
+              br
+              b Developer: 
+              | Ubisoft 
+              br 
+              b Publisher: 
+              | Ubisoft
+              br  
+              b Release Date: 
+              | 28 Nov, 2016
+          .gs-slider
+            #slides
+              img(src="http://cdn.edgecast.steamstatic.com/steam/apps/447040/ss_3466ea1a9e73594961b9f73fd560f379f7f49870.1920x1080.jpg?t=1485882224")
+              img(src="http://cdn.edgecast.steamstatic.com/steam/apps/447040/ss_a3787b7673e663ef78a59397eaf6b50a61ef70ff.1920x1080.jpg?t=1485882224")
+              img(src="http://cdn.akamai.steamstatic.com/steam/apps/447040/ss_b93d600b2a0372d6b5a5d191b46654ba489819d1.1920x1080.jpg?t=1485882224")
+              img(src="http://cdn.akamai.steamstatic.com/steam/apps/447040/ss_6eb9108a5ac2f33942d15ebf0801f0e69373d4f8.1920x1080.jpg?t=1485882224")
+              iframe(width="100%" height="100%" src="https://www.youtube.com/embed/ixDxJ_X1pfo" frameborder="0" allowfullscreen)
+            
+              a(href="#" class="slidesjs-previous slidesjs-navigation")
+                i.fa.fa-chevron-left
+              a(href="#" class="slidesjs-next slidesjs-navigation")
+                i.fa.fa-chevron-right
+          
+        section.gs-area-no2
+          section.news-primary.col-xs-12.col-sm-12.col-md-8.col-lg-8
+            .x-related-title Genre
+            .page-content.gs-content-game.gs-genre-game
+              a(href="#").genre-tag.hvr-bounce-to-right Action
+              a(href="#").genre-tag.hvr-bounce-to-right Open World
+              a(href="#").genre-tag.hvr-bounce-to-right Park Out
+              a(href="#").genre-tag.hvr-bounce-to-right Comedy
+              a(href="#").genre-tag.hvr-bounce-to-right Sealth
+
+            .x-related-title About this game
+            .page-content.gs-content-game
+              p Play as Marcus Holloway, a brilliant young hacker living in the birthplace of the tech revolution, the San Francisco Bay Area.
+              p Team up with Dedsec, a notorious group of hackers, to execute the biggest hack in history; take down ctOS 2.0, an invasive operating system being used by criminal masterminds to monitor and manipulate citizens on a massive scale.
+              ul
+                li Explore the dynamic open-world, full of gameplay possibilities
+                li Hack into every connected device and take control of the city infrastructure.
+                li Develop different skills to suit your playstyle, and upgrade your hacker tools – RC cars, Quadcopter drone, 3D printed weapons and much more.
+                li Stay seamlessly connected to your friends with a brand new co-op and adversarial multiplayer Watch Dogs experience.
+
+            .x-related-title System Requirements
+            .gs-system
+              ul.nav.nav-pills.nav-justified
+                li.active
+                  a(data-toggle="pill" href="#menu1") Minimal Requirements
+                li
+                  a(data-toggle="pill" href="#menu2") Recommended Requirements
+
+              .tab-content
+                #menu1.tab-pane.fade.in.active
+                  .minimal-requirements
+                    .x-row
+                      span System Requirements:
+                      strong Windows 7 SP1, Windows 8.1, Windows 10
+                    .x-row
+                      span Processor:
+                      strong Intel Core i5 2400s @ 2.5 GHz
+                    .x-row
+                      span Memory:
+                      strong  8 GB RAM
+                    .x-row
+                      span Graphics:
+                      strong NVIDIA GeForce GTX 660 with 2 GB VRAM or AMD Radeon HD 7870
+                    .x-row
+                      span HDD:
+                      strong 50 GB
+                #menu2.tab-pane.fade
+                  .minimal-requirements
+                    .x-row
+                      span System Requirements:
+                      strong 64-bit Windows 10 or later
+                    .x-row
+                      span Processor:
+                      strong AMD FX 8350 Wraith / Intel Core i7 4790
+                    .x-row
+                      span Memory:
+                      strong  16 GB RAM
+                    .x-row
+                      span Graphics:
+                      strong  AMD Radeon RX 480 4GB / NVIDIA GeForce GTX 1060 3GB
+                    .x-row
+                      span HDD:
+                      strong 50 GB
+            
+            .x-related-title Series Games
+            .gs-series-game.home-series-game.portfolio <!-- delete home-series.... -->
+              .game-owl-carousel.owl-carousel.owl-theme <!-- star owl carousel -->
+                .item.sidebar-item.x-item
+                  a(href="http://localhost:3000/games-single.html")
+                    .z-thumb
+                      img.img-responsive(src="https://crackwatch.com/wp-content/uploads/2016/12/watch-dogs-2-crack.png" alt="Item 1")
+                      .btn.btn-readmore Read more  
+                    .caption(style="background-color: #fff") 
+                      p Watch Dogs 2
+
+                .item.sidebar-item.x-item
+                  a(href="http://localhost:3000/games-single.html")
+                    .z-thumb
+                      img.img-responsive(src="../images/watch-dogs.jpg" alt="Item 1")
+                      .btn.btn-readmore Read more  
+                    .caption 
+                      p Watch Dogs 
+
+          include includes/sidebar-widget.pug
+        //section.gs-area-no3
+      
+      include includes/foot_copy.pug
+    include includes/gs-modal.pug
+  script(src="js/custom.js")        
+  script(src="js/jquery.shuffle.min.js")
+  script(src="js/jquery.slides.min.js")

@@ -1,0 +1,27 @@
+.btn-download {
+  background-color: #eee;
+  padding: 0;
+  margin-bottom: 5px;
+  border-radius: 0;
+  border: none;
+}
+.icon-download {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.icon-download li {
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  -webkit-animation: bounceIn 0.5s linear;
+  animation: bounceIn 0.5s linear;
+}
+.icon-download li img {
+  width: 100%;
+}
+.tooltip.top .tooltip-inner {
+  font-size: 16px;
+}

@@ -1,0 +1,87 @@
+.x-related-content {
+  position: relative;
+  background-color: darktext;
+  overflow: hidden;
+}
+.x-related-content img {
+  max-width: 100%;
+  opacity: 0.8;
+}
+.x-related-content .news-share {
+  absolute: top left;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.x-related-content .news-share .fa {
+  margin-bottom: 20px;
+  opacity: 0;
+}
+.x-related-content .news-share .fa-facebook-f {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.x-related-content .news-share .fa-twitter {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.x-related-content .news-share .fa-google-plus {
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.x-related-item:hover .fa {
+  margin-bottom: 0px;
+  opacity: 1;
+}
+.x-related-item:hover .news-share {
+  background-color: rgba(0,0,0,0.5);
+}
+.x-widget-primary,
+.x-related-primary,
+.row-eq-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.x-related-primary .x-related-item {
+  display: table-cell;
+  background-color: bg-box;
+}
+.x-related-primary .x-related-item .x-related-caption {
+  padding: 5px;
+  color: lighttext;
+}
+.x-related-primary .x-related-item .x-related-caption h4 {
+  line-height: 24px;
+}
+.x-related-primary .x-related-item .x-related-caption span,
+.x-related-primary .x-related-item .x-related-caption p {
+  color: lighttext;
+}
+.x-related-primary .x-related-item:hover .x-related-caption {
+  color: dteal;
+}
+.x-related-primary .x-related-item:hover .x-related-caption h4 {
+  color: dteal;
+}
+.x-related-primary > * {
+  width: 33%;
+}

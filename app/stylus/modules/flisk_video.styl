@@ -1,0 +1,43 @@
+darktext = #323a45
+.flisk-video
+	//max-height 550px
+	position relative
+	padding 30px 0
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	overflow hidden
+	&::after 
+		content ''
+		absolute top left
+		width 100%
+		height 100%
+		background-color rgba(darktext,0.6)
+		//background linear-gradient(to bottom, rgba(bg-body,0.2) 40%, rgba(bg-body,1))	
+		z-index 0
+	.flisk-video-wrapper
+		padding 0
+		> *
+			z-index 10
+			padding 0
+	.fv-info
+		padding-right 10px
+		&:hover
+			h3
+				text-shadow 1px 0px 20px lighttext
+		.x-related-caption
+			color lighttext
+			h1
+			h3
+				font-weight bold
+				margin 10px 0
+				transition 0.25s
+	.fv-video
+		padding-left 10px
+
+@media only screen and (max-width: 991px)
+	.flisk-video-wrapper
+		.fv-info
+			padding 0 15px 20px
+		.fv-video
+			padding 0 15px	

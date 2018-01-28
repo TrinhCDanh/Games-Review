@@ -1,0 +1,43 @@
+.faq-container {
+  margin-bottom: 20px;
+}
+.faq-trigger {
+  -webkit-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  margin-bottom: 10px;
+}
+.faq-trigger:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.o-accordion {
+  position: relative;
+  background-color: #fff;
+  color: #4b0082;
+  cursor: pointer;
+  padding: 18px 30px 18px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-weight: bold;
+}
+.o-accordion:after {
+  content: '\002B';
+  color: #4b0082;
+  absolute: right 10px bottom 10px;
+  font-weight: bold;
+}
+.o-accordion.active:after {
+  content: "\2212";
+}
+.o-panel {
+  background-color: #fff;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
